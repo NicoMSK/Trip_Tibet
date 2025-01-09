@@ -43,6 +43,44 @@
       </nav>
     </div>
   </header>
+  <main class="page__main">
+    <section class="hero">
+      <div class="hero__container container">
+        <h1 class="hero__title">Насладись прогулкой в&nbsp;горах
+          с&nbsp;командой единомышленников</h1>
+        <div class="hero__form-wrapper">
+          <form class="hero-form form" action="https://echo.htmlacademy.ru/courses" method="post">
+            <div class="form__box">
+              <select name="city" id="city-select">
+                <option value="">Локация для тура</option>
+                <option value="petersburg">Санкт-Петербург</option>
+                <option value="samara">Самара</option>
+                <option value="novosibirsk">Новосибирск</option>
+                <option value="perm">Пермь</option>
+              </select>
+              <label for="city-select">выберите из списка</label>
+            </div>
+            <div class="form__box">
+              <input type="date" name="date" id="date">
+              <label for="date">укажите диапазон</label>
+            </div>
+            <div class="form__box">
+              <select name="participants" id="participants-select">
+                <option value="">Участники</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+              </select>
+              <label for="participants-select">минимум 4 человека</label>
+            </div>
+            <button class="form__btn">Найти программу</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>
