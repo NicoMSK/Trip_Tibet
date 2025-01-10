@@ -11,7 +11,7 @@
 </head>
 
 <body class="page__body">
-  <header class="header" style="background-color: blue;">
+  <header class="header">
     <div class="header__container container">
       <nav class="header__nav nav nav--closed nav--nojs">
         <a class="nav__logo-link" href="#">
@@ -75,11 +75,393 @@
               </select>
               <label for="participants-select">минимум 4 человека</label>
             </div>
-            <button class="form__btn">Найти программу</button>
+            <button class="form__btn" type="submit">Найти программу</button>
           </form>
         </div>
       </div>
     </section>
+    <section class="about">
+      <div class="about__container container">
+        <div class="about__wrapper">
+          <div class="about__media">
+            <div class="about__pic">
+              <picture>
+                <source srcset="images/about/about-img-2.webp 1x, images/about/about-img-2@2x.webp 2x"
+                  type="image/webp">
+                <img class="about__img" src="images/about/about-img-2.jpg" srcset="images/about/about-img-2@2x.jpg"
+                  width="350" height="400" alt="Горы" loading="lazy">
+              </picture>
+            </div>
+            <div class="about__video">
+              <video controls width="350" height="400" poster="images/about/about-img-1.webp" preload="metadata">
+                <source src="video/природа.mp4" type="video/mp4">
+                Ваш браузер не поддерживает встроенные видео :(
+              </video>
+              <button class="about__video-btn" aria-label="Смотреть видео">плей</button>
+            </div>
+          </div>
+          <div class="about__content">
+            <p class="about__text preview-text">о нашем походе</p>
+            <h2 class="about__title title">Исследуйте все горные массивы мира вместе с&nbsp;нами</h2>
+            <p class="about__description">Его корни уходят в&nbsp;один фрагмент классической латыни 45&nbsp;года н.э.,
+              то&nbsp;есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из&nbsp;колледжа
+              Hampden-Sydney, штат Вирджиния, взял одно из&nbsp;самых странных слов в&nbsp;Lorem Ipsum,
+              &quot;consectetur&quot;и занялся его поисками в&nbsp;классической латинской литературе.</p>
+            <a class="about__link btn" href="#">Программа тура</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="programs">
+      <div class="programs__container container">
+        <p class="programs__text preview-text">наше предложение</p>
+        <h2 class="programs__title title">Лучшие программы для тебя</h2>
+        <p class="programs__description">Его корни уходят в&nbsp;один фрагмент классической латыни 45&nbsp;года н.э.,
+          то&nbsp;есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из&nbsp;колледжа.</p>
+        <ul class="programs__list">
+          <li class="programs__item">
+            <h3 class="programs__subtitle">Опытный гид</h3>
+            <p class="programs__sub-description">Для современного мира базовый вектор развития предполагает независимые
+              способы реализации соответствующих условий активизации.</p>
+          </li>
+          <li class="programs__item">
+            <h3 class="programs__subtitle">Безопасный поход</h3>
+            <p class="programs__sub-description">Для современного мира базовый вектор развития предполагает независимые
+              способы реализации соответствующих условий активизации.</p>
+          </li>
+          <li class="programs__item">
+            <h3 class="programs__subtitle">Лояльные цены</h3>
+            <p class="programs__sub-description">Для современного мира базовый вектор развития предполагает независимые
+              способы реализации соответствующих условий активизации.</p>
+          </li>
+        </ul>
+        <a class="programs__link btn" href="#">Стоимость программ</a>
+      </div>
+      <div class="programs__media">
+        <picture>
+          <source srcset="images/programs/programs-1.webp 1x, images/programs/programs-1@2x.webp 2x" type="image/webp">
+          <img class="programs__img" src="images/programs/programs-1.jpg" srcset="images/programs/programs-1@2x.jpg"
+            width="250" height="250" alt="Рука с напитком на фоне гор и лазурно голубой воды" loading="lazy">
+        </picture>
+        <picture>
+          <source srcset="images/programs/programs-2.webp 1x, images/programs/programs-2@2x.webp 2x" type="image/webp">
+          <img src="images/programs/programs-2.jpg" srcset="images/programs/programs-2@2x.jpg" width="250" height="250"
+            alt="Человек стоящий на обрыве каньона" loading="lazy">
+        </picture>
+        <picture>
+          <source srcset="images/programs/programs-3.webp 1x, images/programs/programs-3@2x.webp 2x" type="image/webp">
+          <img src="images/programs/programs-3.jpg 1x" srcset="images/programs/programs-3@2x.jpg" width="250"
+            height="250" alt="Человек сидит на снегоходе на вершине горы" loading="lazy">
+        </picture>
+        <picture>
+          <source srcset="images/programs/programs-4.webp 1x, images/programs/programs-4@2x.webp 2x" type="image/webp">
+          <img src="images/programs/programs-4.jpg" srcset="images/programs/programs-4@2x.jpg" width="250" height="250"
+            alt="Горы и равнина с рекой" loading="lazy">
+        </picture>
+      </div>
+    </section>
+    <section class="favourites">
+      <div class="favourites__container container">
+        <p class="favourites__text preview-text">по версии отдыхающих</p>
+        <h2 class="favourites__title title">Популярные направления</h2>
+        <ul class="favourites__list">
+          <li class="favourites__item">
+            <picture>
+              <source srcset="images/favourites/lake-boat.webp 1x, images/favourites/lake-boat@2x.webp 2x"
+                type="image/webp">
+              <img src="images/favourites/lake-boat.jpg" srcset="images/favourites/lake-boat@2x.jpg" width="380"
+                height="500" alt="Озеро возле гор" loading="lazy">
+            </picture>
+            <span class="favourites__star">4.9</span>
+            <div class="favourites__wrapper">
+              <div class="favourites__box-text">
+                <h2 class="favourites__title">Озеро возле гор</h2>
+                <p class="favourites__text">романтическое приключение</p>
+              </div>
+              <p class="favourites__price">480 $</p>
+            </div>
+            <div class="favourites__hidden">
+              <p class="favourites__description">Его корни уходят в&nbsp;один фрагмент классической латыни 45&nbsp;года
+                н.э., то&nbsp;есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из&nbsp;колледжа
+                Hampden-Sydney, штат Вирджиния, взял одно из&nbsp;самых странных слов в&nbsp;Lorem Ipsum,
+                &quot;consectetur&quot;и занялся его поисками в&nbsp;классической латинской литературе.</p>
+              <a class="favourites__link btn" href="#">Программа тура</a>
+            </div>
+          </li>
+          <li class="favourites__item">
+            <picture>
+              <source srcset="images/favourites/night-mountain.webp 1x, images/favourites/night-mountain@2x.webp 2x"
+                type="image/webp">
+              <img src="images/favourites/night-mountain.jpg" srcset="images/favourites/night-mountain@2x.jpg"
+                width="380" height="500" alt="Ночь в горах" loading="lazy">
+            </picture>
+            <span class="favourites__star">4.5</span>
+            <div class="favourites__wrapper">
+              <div class="favourites__box-text">
+                <h2 class="favourites__title">Ночь в горах</h2>
+                <p class="favourites__text">в компании друзей</p>
+              </div>
+              <p class="favourites__price">500 $</p>
+            </div>
+            <div class="favourites__hidden">
+              <p class="favourites__description">Его корни уходят в&nbsp;один фрагмент классической латыни 45&nbsp;года
+                н.э., то&nbsp;есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из&nbsp;колледжа
+                Hampden-Sydney, штат Вирджиния, взял одно из&nbsp;самых странных слов в&nbsp;Lorem Ipsum,
+                &quot;consectetur&quot;и занялся его поисками в&nbsp;классической латинской литературе.</p>
+              <a class="favourites__link btn" href="#">Программа тура</a>
+            </div>
+          </li>
+          <li class="favourites__item">
+            <picture>
+              <source srcset="images/favourites/yoga-mountain.webp 1x, images/favourites/yoga-mountain@2x.webp 2x"
+                type="image/webp">
+              <img src="images/favourites/yoga-mountain.jpg" srcset="images/favourites/yoga-mountain@2x.jpg" width="380"
+                height="500" alt="Йога в горах" loading="lazy">
+            </picture>
+            <span class="favourites__star">5.0</span>
+            <div class="favourites__wrapper">
+              <div class="favourites__box-text">
+                <h2 class="favourites__title">Йога в горах</h2>
+                <p class="favourites__text">для тех, кто забоится о себе</p>
+              </div>
+              <p class="favourites__price">230 $</p>
+            </div>
+            <div class="favourites__hidden">
+              <p class="favourites__description">Его корни уходят в&nbsp;один фрагмент классической латыни 45&nbsp;года
+                н.э., то&nbsp;есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из&nbsp;колледжа
+                Hampden-Sydney, штат Вирджиния, взял одно из&nbsp;самых странных слов в&nbsp;Lorem Ipsum,
+                &quot;consectetur&quot;и занялся его поисками в&nbsp;классической латинской литературе.</p>
+              <a class="favourites__link btn" href="#">Программа тура</a>
+            </div>
+          </li>
+        </ul>
+        <a class="favourites__link btn" href="#">Рейтинг направлений</a>
+      </div>
+    </section>
+    <section class="blog">
+      <div class="blog__container container">
+        <p class="blog__text preview-text">делимся впечатлениями</p>
+        <h2 class="blog__title title">Блог о путешествиях</h2>
+        <ul class="blog__list">
+          <li class="blog__item">
+            <a class="blog__link" href="#">
+              <div class="blog__media">
+                <picture>
+                  <source srcset="images/blog/Italy.webp 1x, images/blog/Italy@2x.webp 2x" type="image/webp">
+                  <img class="blog__img" src="images/blog/Italy.jpg" srcset="images/blog/Italy@2x.jpg" width="230"
+                    height="280" alt="Вид на Итальянский город расположеный на скале" loading="lazy">
+                </picture>
+              </div>
+              <div class="blog__wrapper">
+                <h3 class="blog__subtitile">Красивая Италя, какая она в&nbsp;реальности?</h3>
+                <p class="blog__description">Для современного мира базовый вектор развития предполагает независимые
+                  способы реализации соответствующих условий активизации.</p>
+                <time datetime="2023/04/01">01/04/2023</time>
+                <p class="blog__subtext">читать статью</p>
+              </div>
+            </a>
+          </li>
+          <li class="blog__item">
+            <a class="blog__link" href="#">
+              <div class="blog__media">
+                <picture>
+                  <source srcset="images/blog/sky-wing-airplane.webp 1x, images/blog/sky-wing-airplane@2x.webp 2x"
+                    type="image/webp">
+                  <img class="blog__img" src="images/blog/sky-wing-airplane.jpg"
+                    srcset="images/blog/sky-wing-airplane@2x.jpg" width="230" height="280"
+                    alt="Вид из самолёта на облака с лучами солнца на этих облаках" loading="lazy">
+                </picture>
+              </div>
+              <div class="blog__wrapper">
+                <h3 class="blog__subtitile">Долой сомнения! Весь мир открыт для вас!</h3>
+                <p class="blog__description">Для современного мира базовый вектор развития предполагает независимые
+                  способы реализации соответствующих условий активизации ... независимые способы реализации
+                  соответствующих условий активизации ...Для современного мира базовый вектор развития предполагает
+                  независимые способы реализации соответствующих условий активизации ... независимые способы реализации
+                  соответствующих условий активизации ...</p>
+                <time datetime="2023/04/01">01/04/2023</time>
+                <p class="blog__subtext">читать статью</p>
+              </div>
+            </a>
+          </li>
+          <li class="blog__item">
+            <a class="blog__link" href="#">
+              <div class="blog__media">
+                <picture>
+                  <source srcset="images/blog/man-street.webp 1x, images/blog/man-street@2x.webp 2x" type="image/webp">
+                  <img class="blog__img" src="images/blog/man-street.jpg" srcset="images/blog/man-street@2x.jpg"
+                    width="230" height="280" alt="Вид из самолёта на облака с лучами солнца на этих облаках"
+                    loading="lazy">
+                </picture>
+              </div>
+              <div class="blog__wrapper">
+                <h3 class="blog__subtitile">Как подготовиться к&nbsp;путешествию в&nbsp;одиночку?</h3>
+                <p class="blog__description">Для современного мира базовый вектор развития предполагает.</p>
+                <time datetime="2023/04/01">01/04/2023</time>
+                <p class="blog__subtext">читать статью</p>
+              </div>
+            </a>
+          </li>
+          <li class="blog__item">
+            <a class="blog__link" href="#">
+              <div class="blog__media">
+                <picture>
+                  <source srcset="images/blog/india.webp 1x, images/blog/india@2x.webp 2x" type="image/webp">
+                  <img class="blog__img" src="images/blog/india.jpg" srcset="images/blog/india@2x.jpg" width="230"
+                    height="280" alt="Вид из самолёта на облака с лучами солнца на этих облаках" loading="lazy">
+                </picture>
+              </div>
+              <div class="blog__wrapper">
+                <h3 class="blog__subtitile">Индия ... летим?</h3>
+                <p class="blog__description">Для современного мира базовый.</p>
+                <time datetime="2023/04/01">01/04/2023</time>
+                <p class="blog__subtext">читать статью</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <a class="blog__link-btn btn" href="#">Другие материалы</a>
+      </div>
+    </section>
+    <section class="foto">
+      <div class="foto__container container">
+        <p class="foto__text preview-text">фото-отчет</p>
+        <h2 class="foto__title title">Делимся впечатлениями</h2>
+        <div class="foto__wrapper">
+          <picture>
+            <source srcset="images/gallery/air-balloon.webp 1x, images/gallery/air-balloon@2x.webp 2x"
+              type="image/webp">
+            <img src="images/gallery/air-balloon.jpg" srcset="images/gallery/air-balloon@2x.jpg" width="580"
+              height="250" alt="Фотограф фотографирует воздушные шары, которые парят в воздухе" loading="lazy">
+          </picture>
+          <picture>
+            <source srcset="images/gallery/map.webp 1x, images/gallery/map@2x.webp 2x" type="image/webp">
+            <img src="images/gallery/map.jpg" srcset="images/gallery/map@2x.jpg 2x" width="280" height="250"
+              alt="Карта местности, на которой лежит карандаш, фотоаппрат, сумки и блокнот" loading="lazy">
+          </picture>
+          <picture>
+            <source srcset="images/gallery/tower-sea.webp 1x, images/gallery/tower-sea@2x.webp 2x" type="image/webp">
+            <img src="images/gallery/tower-sea.jpg" srcset="images/gallery/tower-sea@2x.jpg 2x" width="280" height="250"
+              alt="Здание в ОАЭ стоящее в океане на острове" loading="lazy">
+          </picture>
+          <picture>
+            <source srcset="images/gallery/boats.webp 1x, images/gallery/boats@2x.webp 2x" type="image/webp">
+            <img src="images/gallery/boats.jpg" srcset="images/gallery/boats@2x.jpg 2x" width="280" height="250"
+              alt="Гавань с лодками" loading="lazy">
+          </picture>
+          <picture>
+            <source srcset="images/gallery/canyon.webp 1x, images/gallery/canyon@2x.webp 2x" type="image/webp">
+            <img src="images/gallery/canyon.jpg" srcset="images/gallery/canyon@2x.jpg 2x" width="580" height="250"
+              alt="Девушка стоит на краю каньона" loading="lazy">
+          </picture>
+          <picture>
+            <source srcset="images/gallery/book.webp 1x, images/gallery/book@2x.webp 2x" type="image/webp">
+            <img src="images/gallery/book.jpg" srcset="images/gallery/book@2x.jpg 2x" width="280" height="250"
+              alt="На столе лежит раскрытый пустой блокнот, рядом с ним лежит фотоаппрат с обективом, лупой, фотокартачками, очки и карандаш"
+              loading="lazy">
+          </picture>
+        </div>
+        <a class="foto__link btn" href="#">Наш pinterest</a>
+      </div>
+    </section>
+    <section class="subscribe">
+      <div class="subscribe__container container">
+        <p class="subscribe__text preview-text">актуально</p>
+        <h2 class="subscribe__title title">Получайте полезные рассылки о&nbsp;путешествиях</h2>
+        <form class="subscribe__form" action="#" method="post">
+          <label class="subscribe__label">Введите e-mail адрес
+            <input class="subscribe__input" name="email" type="email" placeholder="name@domain.com" required>
+          </label>
+          <button class="subscribe__btn btn" type="submit">Подписаться на новости</button>
+        </form>
+        <p class="subscribe__description">подписываясь на&nbsp;новости, вы&nbsp;автоматически соглашаетесь
+          <a class="subscribe__link" href="#">
+            с&nbsp;условиями обработки
+            персональных данных
+          </a> и&nbsp;<a class="subscribe__link" href="#">правилами рекламных рассылок</a>
+        </p>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__container container">
+        <div class="footer__top">
+          <div class="footer__contacts">
+            <h3 class="footer__title">Компания «РумТибет»</h3>
+            <p class="footer__description">Его корни уходят в&nbsp;один фрагмент классической латыни 45&nbsp;года н.э.,
+              то&nbsp;есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из&nbsp;колледжа
+              Hampden-Sydney.</p>
+            <a class="footer__mail" href="mailto:info@domain.com">info@domain.com</a>
+            <a class="footer__phone" href="tel:+71234567890">+7 (123) 456-78-90</a>
+            <ul class="footer__social social">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <span class="visually-hidden">Мы в телеграмм</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <span class="visually-hidden">Мы в контакте</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <span class="visually-hidden">Мы в пинтересте</span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <span class="visually-hidden">Мы в скайпе</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__services">
+            <h3 class="footer__title">Наши услуги</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">Прогулки в горы летом</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Зимние походы в горы</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Посещение храмов в горах</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Экстремальные виды туризма</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Походы в джунглях Амазонии</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Поездка в Африку</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__inform">
+            <h3 class="footer__title">Важно для путешествий</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">Как собрать в долгий поход?</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Жизненно важные предметы для похода</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Медицинская страховка, гарантии безопасности</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Если вы врач - загляните сюда</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__copyright">ИП Константинопольский К.К., 2023</p>
+          <a class="footer__info-policy" href="#">Политика обработки персональных данных</a>
+        </div>
+      </div>
+    </footer>
   </main>
 </body>
 
