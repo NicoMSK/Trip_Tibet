@@ -1,0 +1,39 @@
+$main-font: "Nunito Sans", "Arial", sans-serif;
+$second-font: "NEXT ART", "Arial", sans-serif;
+
+@include font-face(
+  "Nunito Sans",
+  300,
+  normal,
+  url("../../fonts/nunito_sans/NunitoSans7pt-Light.woff2") format("woff2")
+);
+@include font-face(
+  "Nunito Sans",
+  400,
+  normal,
+  url("../../fonts/nunito_sans/NunitoSans7pt-Regular.woff2") format("woff2")
+);
+@include font-face(
+  "Nunito Sans",
+  600,
+  normal,
+  url("../../fonts/nunito_sans/NunitoSans7pt-SemiBold.woff2") format("woff2")
+);
+@include font-face(
+  "Nunito Sans",
+  700,
+  normal,
+  url("../../fonts/nunito_sans/NunitoSans7pt-Bold.woff2") format("woff2")
+);
+@include font-face(
+  "Nunito Sans",
+  800,
+  normal,
+  url("../../fonts/nunito_sans/NunitoSans7pt-ExtraBold.woff2") format("woff2")
+);
+@include font-face(
+  "NEXT ART",
+  700,
+  normal,
+  url("../../fonts/next/NEXTART-Bold.woff2") format("woff2")
+);
