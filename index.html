@@ -21,6 +21,9 @@
         <a class="nav__logo-link" href="#">
           <img src="icons/sprite.svg#logo" width="137" height="72" alt="Логотип румтибет">
         </a>
+        <button class="nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
         <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link" href="#">Главная</a>
@@ -40,10 +43,8 @@
           <li class="nav__item">
             <a class="nav__link" href="#">Контакты</a>
           </li>
-          <li class="nav__item">
-            <a class="nav__link btn" href="#">Консультация</a>
-          </li>
         </ul>
+        <a class="nav__link-btn btn" href="#">Консультация</a>
       </nav>
     </div>
   </header>
@@ -140,28 +141,32 @@
           </li>
         </ul>
         <a class="programs__link btn" href="#">Стоимость программ</a>
-      </div>
-      <div class="programs__media">
-        <picture>
-          <source srcset="images/programs/programs-1.webp 1x, images/programs/programs-1@2x.webp 2x" type="image/webp">
-          <img class="programs__img" src="images/programs/programs-1.jpg" srcset="images/programs/programs-1@2x.jpg"
-            width="250" height="250" alt="Рука с напитком на фоне гор и лазурно голубой воды" loading="lazy">
-        </picture>
-        <picture>
-          <source srcset="images/programs/programs-2.webp 1x, images/programs/programs-2@2x.webp 2x" type="image/webp">
-          <img src="images/programs/programs-2.jpg" srcset="images/programs/programs-2@2x.jpg" width="250" height="250"
-            alt="Человек стоящий на обрыве каньона" loading="lazy">
-        </picture>
-        <picture>
-          <source srcset="images/programs/programs-3.webp 1x, images/programs/programs-3@2x.webp 2x" type="image/webp">
-          <img src="images/programs/programs-3.jpg" srcset="images/programs/programs-3@2x.jpg" width="250" height="250"
-            alt="Человек сидит на снегоходе на вершине горы" loading="lazy">
-        </picture>
-        <picture>
-          <source srcset="images/programs/programs-4.webp 1x, images/programs/programs-4@2x.webp 2x" type="image/webp">
-          <img src="images/programs/programs-4.jpg" srcset="images/programs/programs-4@2x.jpg" width="250" height="250"
-            alt="Горы и равнина с рекой" loading="lazy">
-        </picture>
+        <div class="programs__media">
+          <picture>
+            <source srcset="images/programs/programs-1.webp 1x, images/programs/programs-1@2x.webp 2x"
+              type="image/webp">
+            <img class="programs__img" src="images/programs/programs-1.jpg" srcset="images/programs/programs-1@2x.jpg"
+              width="250" height="250" alt="Рука с напитком на фоне гор и лазурно голубой воды" loading="lazy">
+          </picture>
+          <picture>
+            <source srcset="images/programs/programs-2.webp 1x, images/programs/programs-2@2x.webp 2x"
+              type="image/webp">
+            <img src="images/programs/programs-2.jpg" srcset="images/programs/programs-2@2x.jpg" width="250"
+              height="250" alt="Человек стоящий на обрыве каньона" loading="lazy">
+          </picture>
+          <picture>
+            <source srcset="images/programs/programs-3.webp 1x, images/programs/programs-3@2x.webp 2x"
+              type="image/webp">
+            <img src="images/programs/programs-3.jpg" srcset="images/programs/programs-3@2x.jpg" width="250"
+              height="250" alt="Человек сидит на снегоходе на вершине горы" loading="lazy">
+          </picture>
+          <picture>
+            <source srcset="images/programs/programs-4.webp 1x, images/programs/programs-4@2x.webp 2x"
+              type="image/webp">
+            <img src="images/programs/programs-4.jpg" srcset="images/programs/programs-4@2x.jpg" width="250"
+              height="250" alt="Горы и равнина с рекой" loading="lazy">
+          </picture>
+        </div>
       </div>
     </section>
     <section class="favourites">
@@ -388,87 +393,87 @@
         </p>
       </div>
     </section>
-    <footer class="footer">
-      <div class="footer__container container">
-        <div class="footer__top">
-          <div class="footer__contacts">
-            <h3 class="footer__title">Компания «РумТибет»</h3>
-            <p class="footer__description">Его корни уходят в&nbsp;один фрагмент классической латыни 45&nbsp;года н.э.,
-              то&nbsp;есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из&nbsp;колледжа
-              Hampden-Sydney.</p>
-            <a class="footer__mail" href="mailto:info@domain.com">info@domain.com</a>
-            <a class="footer__phone" href="tel:+71234567890">+7 (123) 456-78-90</a>
-            <ul class="footer__social social">
-              <li class="social__item">
-                <a class="social__link" href="#">
-                  <span class="visually-hidden">Мы в телеграмм</span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="#">
-                  <span class="visually-hidden">Мы в контакте</span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="#">
-                  <span class="visually-hidden">Мы в пинтересте</span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link" href="#">
-                  <span class="visually-hidden">Мы в скайпе</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__services">
-            <h3 class="footer__title">Наши услуги</h3>
-            <ul class="footer__list">
-              <li class="footer__item">
-                <a class="footer__link" href="#">Прогулки в горы летом</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Зимние походы в горы</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Посещение храмов в горах</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Экстремальные виды туризма</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Походы в джунглях Амазонии</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Поездка в Африку</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__inform">
-            <h3 class="footer__title">Важно для путешествий</h3>
-            <ul class="footer__list">
-              <li class="footer__item">
-                <a class="footer__link" href="#">Как собрать в долгий поход?</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Жизненно важные предметы для похода</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Медицинская страховка, гарантии безопасности</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Если вы врач - загляните сюда</a>
-              </li>
-            </ul>
-          </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__top">
+        <div class="footer__contacts">
+          <h3 class="footer__title">Компания «РумТибет»</h3>
+          <p class="footer__description">Его корни уходят в&nbsp;один фрагмент классической латыни 45&nbsp;года н.э.,
+            то&nbsp;есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из&nbsp;колледжа
+            Hampden-Sydney.</p>
+          <a class="footer__mail" href="mailto:info@domain.com">info@domain.com</a>
+          <a class="footer__phone" href="tel:+71234567890">+7 (123) 456-78-90</a>
+          <ul class="footer__social social">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Мы в телеграмм</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Мы в контакте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Мы в пинтересте</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="visually-hidden">Мы в скайпе</span>
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="footer__bottom">
-          <p class="footer__copyright">ИП Константинопольский К.К., 2023</p>
-          <a class="footer__info-policy" href="#">Политика обработки персональных данных</a>
+        <div class="footer__services">
+          <h3 class="footer__title">Наши услуги</h3>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Прогулки в горы летом</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Зимние походы в горы</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Посещение храмов в горах</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Экстремальные виды туризма</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Походы в джунглях Амазонии</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Поездка в Африку</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__inform">
+          <h3 class="footer__title">Важно для путешествий</h3>
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Как собрать в долгий поход?</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Жизненно важные предметы для похода</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Медицинская страховка, гарантии безопасности</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Если вы врач - загляните сюда</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
-  </main>
+      <div class="footer__bottom">
+        <p class="footer__copyright">ИП Константинопольский К.К., 2023</p>
+        <a class="footer__info-policy" href="#">Политика обработки персональных данных</a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

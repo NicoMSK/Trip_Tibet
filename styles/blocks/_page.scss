@@ -18,3 +18,7 @@
 .page__main {
   flex-grow: 1;
 }
+
+.page__body-no-scroll {
+  overflow: hidden;
+}
