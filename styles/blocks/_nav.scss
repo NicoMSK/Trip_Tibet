@@ -82,8 +82,7 @@
   }
 }
 
-.nav__link,
-.nav__link-btn {
+.nav__link {
   @include link-basic;
 
   font-size: 1.125rem;
@@ -136,16 +135,6 @@
 
 .nav__link-btn {
   margin-left: 7.22%;
-  padding: 12px 24px;
-  background-color: $button;
-  border-radius: 4px;
-  letter-spacing: 0.01em;
-
-  &:hover {
-    color: $button;
-    background-color: $main-light;
-    outline: 1px solid $button;
-  }
 
   @media (max-width: $tablet-width) {
     margin-left: 0;

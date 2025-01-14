@@ -1,0 +1,14 @@
+.btn {
+  @include link-basic;
+
+  padding: 12px 24px;
+  background-color: $button;
+  border-radius: 4px;
+  letter-spacing: 0.01em;
+
+  &:hover {
+    color: $button;
+    background-color: $main-light;
+    outline: 1px solid $button;
+  }
+}

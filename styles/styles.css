@@ -131,7 +131,7 @@ ol {
 }
 
 .nav__logo-link {
-  display: block;
+  display: inline-block;
   font-family: "Nunito Sans", "Arial", sans-serif;
   font-size: 1rem;
   line-height: 125%;
@@ -218,9 +218,8 @@ ol {
   }
 }
 
-.nav__link,
-.nav__link-btn {
-  display: block;
+.nav__link {
+  display: inline-block;
   font-family: "Nunito Sans", "Arial", sans-serif;
   font-size: 1rem;
   line-height: 125%;
@@ -229,30 +228,25 @@ ol {
   font-size: 1.125rem;
   font-weight: 600;
 }
-.nav__link:hover,
-.nav__link-btn:hover {
+.nav__link:hover {
   color: #f2be22;
 }
-.nav__link:focus-visible,
-.nav__link-btn:focus-visible {
+.nav__link:focus-visible {
   outline: 2px solid #f2be22;
   border-radius: 5%;
 }
-.nav__link:active,
-.nav__link-btn:active {
+.nav__link:active {
   opacity: 0.7;
 }
 @media (max-width: 768px) {
-  .nav__link,
-  .nav__link-btn {
+  .nav__link {
     position: relative;
     padding-left: 18px;
     font-size: 1rem;
     font-weight: 400;
     line-height: 129%;
   }
-  .nav__link::before,
-  .nav__link-btn::before {
+  .nav__link::before {
     content: "";
     display: block;
     position: absolute;
@@ -263,33 +257,21 @@ ol {
     mask-image: url("../../icons/sprite.svg#arrow");
     transform: rotate(-90deg);
   }
-  .nav__link:hover,
-  .nav__link-btn:hover {
+  .nav__link:hover {
     text-decoration: underline;
   }
-  .nav__link:hover::before,
-  .nav__link-btn:hover::before {
+  .nav__link:hover::before {
     background-color: #f2be22;
   }
 }
 @media (max-width: 576px) {
-  .nav__link,
-  .nav__link-btn {
+  .nav__link {
     font-size: 0.875rem;
   }
 }
 
 .nav__link-btn {
   margin-left: 7.22%;
-  padding: 12px 24px;
-  background-color: #1a3e3e;
-  border-radius: 4px;
-  letter-spacing: 0.01em;
-}
-.nav__link-btn:hover {
-  color: #1a3e3e;
-  background-color: #fdfdfd;
-  outline: 1px solid #1a3e3e;
 }
 @media (max-width: 768px) {
   .nav__link-btn {
@@ -315,6 +297,24 @@ ol {
   .nav--opened .nav__link-btn:hover::before {
     display: none;
   }
+}
+
+.btn {
+  display: inline-block;
+  font-family: "Nunito Sans", "Arial", sans-serif;
+  font-size: 1rem;
+  line-height: 125%;
+  color: #fdfdfd;
+  text-decoration: none;
+  padding: 12px 24px;
+  background-color: #1a3e3e;
+  border-radius: 4px;
+  letter-spacing: 0.01em;
+}
+.btn:hover {
+  color: #1a3e3e;
+  background-color: #fdfdfd;
+  outline: 1px solid #1a3e3e;
 }
 
 /*# sourceMappingURL=styles.css.map */

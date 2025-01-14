@@ -9,7 +9,7 @@
 }
 
 @mixin link-basic {
-  display: block;
+  display: inline-block;
   font-family: $main-font;
   font-size: 1rem;
   line-height: 125%;
