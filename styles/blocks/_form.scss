@@ -1,0 +1,92 @@
+$border: #e1e3e4;
+
+.form {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px 24px;
+}
+
+.form__box {
+  width: 100%;
+  max-width: 270px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+
+.form__select,
+.form__input {
+  position: relative;
+  padding: 13px 44px 13px 16px;
+  height: 52px;
+  font-weight: 700;
+  line-height: 150%;
+  color: $main-light;
+  background-color: transparent;
+  border: 1px solid $border;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+}
+
+.form__select {
+  background-image: url("../../icons/sprite.svg#arrow");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: right 16px center;
+}
+
+.form__select option:checked {
+  display: none;
+}
+
+//скрытие иконки календаря, при этом сохраняется нажатие на поле чтоб открылся сам календарь
+
+.form__input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  color: transparent;
+  background: transparent;
+  cursor: pointer;
+}
+
+.form__input[type="date"] {
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 17px;
+    right: 16px;
+    background-image: url("../icons/sprite.svg#calendar");
+    z-index: -1;
+  }
+}
+
+.form__label {
+  padding: 0 8px;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 150%;
+  color: $main-light;
+}
+
+.form__btn {
+  @include button-reset;
+
+  padding: 16px;
+  min-width: 213px;
+  font-weight: 700;
+  line-height: 125%;
+  letter-spacing: 0.01em;
+  color: $button;
+  background-color: $main-light;
+  border-radius: 4px;
+}

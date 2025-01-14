@@ -1,12 +1,12 @@
+.header {
+  background-color: $main-dark;
+}
+
 .header__container {
   background-color: $main-dark;
-
-  outline: 2px solid red;
 }
 
 .header__nav {
-  outline: 3px solid salmon;
-
   margin-top: 16px;
   display: flex;
   align-items: center;
