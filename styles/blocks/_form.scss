@@ -89,4 +89,11 @@ $border: #e1e3e4;
   color: $button;
   background-color: $main-light;
   border-radius: 4px;
+  transition: all 0.7s;
+
+  &:hover {
+    color: $main-light;
+    background-color: $button;
+    transition: all 0.5s;
+  }
 }

@@ -110,11 +110,7 @@ ol {
 }
 
 .header {
-  background-color: #18121e;
-}
-
-.header__container {
-  background-color: #18121e;
+  position: relative;
 }
 
 .header__nav {
@@ -312,15 +308,30 @@ ol {
   background-color: #1a3e3e;
   border-radius: 4px;
   letter-spacing: 0.01em;
+  transition: all 0.5s;
 }
 .btn:hover {
   color: #1a3e3e;
   background-color: #fdfdfd;
   outline: 1px solid #1a3e3e;
+  transition: all 0.5s;
 }
 
-.hero {
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 985px;
+  background-image: image-set(url("../../images/hero/hero-background.webp") type("image/webp") 1x, url("../../images/hero/hero-background@2x.webp") type("image/webp") 2x, url("../../images/hero/hero-background.jpg") 1x, url("../../images/hero/hero-background@2x.jpg") 2x);
+  background-repeat: no-repeat;
   background-color: #18121e;
+  background-position: center;
+  z-index: -1;
+}
+
+.hero__container {
+  margin-bottom: 100px;
+  padding-bottom: 82px;
 }
 
 .hero__title {
@@ -428,6 +439,12 @@ ol {
   color: #1a3e3e;
   background-color: #fdfdfd;
   border-radius: 4px;
+  transition: all 0.7s;
+}
+.form__btn:hover {
+  color: #fdfdfd;
+  background-color: #1a3e3e;
+  transition: all 0.5s;
 }
 
 /*# sourceMappingURL=styles.css.map */
