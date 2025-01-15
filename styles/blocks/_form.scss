@@ -4,14 +4,30 @@ $border: #e1e3e4;
   display: flex;
   align-items: flex-start;
   gap: 10px 24px;
+
+  @media (max-width: $desktop-width) {
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+  }
 }
 
 .form__box {
-  width: 100%;
-  max-width: 270px;
+  width: 270px;
   display: flex;
   flex-direction: column;
   row-gap: 8px;
+
+  @media (max-width: $desktop-width) {
+    flex-grow: 1;
+    flex-basis: 40%;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+  }
 }
 
 .form__select,
@@ -28,6 +44,12 @@ $border: #e1e3e4;
   outline: none;
   cursor: pointer;
   appearance: none;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: rgba($main-light, 0.1);
+    }
+  }
 }
 
 .form__select {
@@ -89,11 +111,17 @@ $border: #e1e3e4;
   color: $button;
   background-color: $main-light;
   border-radius: 4px;
-  transition: all 0.7s;
+  transition: all 0.5s;
 
-  &:hover {
-    color: $main-light;
-    background-color: $button;
-    transition: all 0.5s;
+  @media (hover: hover) {
+    &:hover {
+      color: $main-light;
+      background-color: $button;
+      transition: all 0.3s;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    align-self: center;
   }
 }
