@@ -53,10 +53,14 @@ $border: #e1e3e4;
 }
 
 .form__select {
-  background-image: url("../../icons/sprite.svg#arrow");
+  background-image: url("../icons/sprite.svg#arrow");
   background-repeat: no-repeat;
   background-size: 20px 20px;
   background-position: right 16px center;
+
+  @media (max-width: $mobile-small-width) {
+    font-size: 0.875rem;
+  }
 }
 
 .form__select option:checked {
@@ -122,6 +126,7 @@ $border: #e1e3e4;
   }
 
   @media (max-width: $mobile-width) {
+    margin-top: 15px;
     align-self: center;
   }
 }

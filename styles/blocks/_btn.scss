@@ -1,7 +1,11 @@
 .btn {
   @include link-basic;
 
-  padding: 12px 24px;
+  padding: 16px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
   background-color: $button;
   border-radius: 4px;
   letter-spacing: 0.01em;
@@ -12,5 +16,10 @@
     background-color: $main-light;
     outline: 1px solid $button;
     transition: all 0.5s;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin: 0 auto;
+    padding: 12px 18px;
   }
 }
