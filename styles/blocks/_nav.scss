@@ -25,7 +25,6 @@
 
 .nav__list {
   margin-left: auto;
-  margin-right: 50px;
   display: flex;
   flex-wrap: wrap;
   gap: 10px 24px;
@@ -63,6 +62,7 @@
     gap: 16px;
     background-color: $button;
     transform: translateX(0);
+    z-index: 2;
   }
 }
 
@@ -131,13 +131,17 @@
 }
 
 .nav__link-btn {
+  margin-left: 50px;
   position: relative;
 
   @media (max-width: $desktop-width) {
-    margin-left: 0;
     top: 295px;
-    left: -100px;
+    left: -170px;
     transform: translate(-230%);
+  }
+
+  @media (max-width: $tablet-width) {
+    left: -120px;
   }
 }
 
@@ -147,11 +151,13 @@
     background-color: $main-light;
     transform: translate(0);
     transition: background-color 0.7s, color 0.7s, transform 0.5s;
+    z-index: 3;
 
     &:hover {
       color: $main-light;
       background-color: $button;
       outline: 1px solid $preview-text;
+
       &::before {
         display: none;
       }
