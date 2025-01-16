@@ -26,6 +26,10 @@
     padding-top: 363px;
   }
 
+  @media (max-width: $tablet-medium-width) {
+    margin-bottom: 50px;
+  }
+
   @media (max-width: $mobile-width) {
     padding-top: 270px;
   }
@@ -52,6 +56,10 @@
   @media (max-width: $mobile-width) {
     font-size: 1.75rem;
   }
+
+  @media (max-width: $mobile-width) {
+    font-size: 1.5rem;
+  }
 }
 
 .hero__form-wrapper {
@@ -59,4 +67,8 @@
   background-color: rgba($main-bg, 0.2);
   backdrop-filter: blur(6px);
   border-radius: 10px;
+
+  @media (max-width: $mobile-small-width) {
+    padding: 30px;
+  }
 }

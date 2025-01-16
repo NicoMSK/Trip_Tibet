@@ -1,0 +1,9 @@
+.title {
+  @include title-basic;
+
+  margin-bottom: 40px;
+
+  @media (max-width: $mobile-width) {
+    font-size: 1.5rem;
+  }
+}

@@ -143,6 +143,11 @@
   @media (max-width: $tablet-width) {
     left: -120px;
   }
+
+  @media (max-width: $mobile-small-width) {
+    top: 265px;
+    left: -100px;
+  }
 }
 
 .nav--opened .nav__link-btn {
