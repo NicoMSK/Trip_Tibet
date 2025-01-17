@@ -120,53 +120,70 @@
     </section>
     <section class="programs">
       <div class="programs__container container">
-        <p class="programs__text preview-text">наше предложение</p>
-        <h2 class="programs__title title">Лучшие программы для тебя</h2>
-        <p class="programs__description">Его корни уходят в&nbsp;один фрагмент классической латыни 45&nbsp;года н.э.,
-          то&nbsp;есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из&nbsp;колледжа.</p>
-        <ul class="programs__list">
-          <li class="programs__item">
-            <h3 class="programs__subtitle">Опытный гид</h3>
-            <p class="programs__sub-description">Для современного мира базовый вектор развития предполагает независимые
-              способы реализации соответствующих условий активизации.</p>
-          </li>
-          <li class="programs__item">
-            <h3 class="programs__subtitle">Безопасный поход</h3>
-            <p class="programs__sub-description">Для современного мира базовый вектор развития предполагает независимые
-              способы реализации соответствующих условий активизации.</p>
-          </li>
-          <li class="programs__item">
-            <h3 class="programs__subtitle">Лояльные цены</h3>
-            <p class="programs__sub-description">Для современного мира базовый вектор развития предполагает независимые
-              способы реализации соответствующих условий активизации.</p>
-          </li>
-        </ul>
-        <a class="programs__link btn" href="#">Стоимость программ</a>
+        <div class="programs__wrapper">
+          <p class="programs__text preview-text">наше предложение</p>
+          <h2 class="programs__title title">Лучшие программы для тебя</h2>
+          <p class="programs__description">Его корни уходят в&nbsp;один фрагмент классической латыни 45&nbsp;года н.э.,
+            то&nbsp;есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из&nbsp;колледжа.</p>
+          <ul class="programs__list">
+            <li class="programs__item programs__item--guide">
+              <h3 class="programs__subtitle">Опытный гид</h3>
+              <p class="programs__sub-description">Для современного мира базовый вектор развития предполагает
+                независимые
+                способы реализации соответствующих условий активизации.</p>
+            </li>
+            <li class="programs__item programs__item--safety">
+              <h3 class="programs__subtitle">Безопасный поход</h3>
+              <p class="programs__sub-description">Для современного мира базовый вектор развития предполагает
+                независимые
+                способы реализации соответствующих условий активизации.</p>
+            </li>
+            <li class="programs__item programs__item--price">
+              <h3 class="programs__subtitle">Лояльные цены</h3>
+              <p class="programs__sub-description">Для современного мира базовый вектор развития предполагает
+                независимые
+                способы реализации соответствующих условий активизации.</p>
+            </li>
+          </ul>
+          <a class="programs__link btn" href="#">Стоимость программ</a>
+        </div>
         <div class="programs__media">
-          <picture>
-            <source srcset="images/programs/programs-1.webp 1x, images/programs/programs-1@2x.webp 2x"
-              type="image/webp">
-            <img class="programs__img" src="images/programs/programs-1.jpg" srcset="images/programs/programs-1@2x.jpg"
-              width="250" height="250" alt="Рука с напитком на фоне гор и лазурно голубой воды" loading="lazy">
-          </picture>
-          <picture>
-            <source srcset="images/programs/programs-2.webp 1x, images/programs/programs-2@2x.webp 2x"
-              type="image/webp">
-            <img src="images/programs/programs-2.jpg" srcset="images/programs/programs-2@2x.jpg" width="250"
-              height="250" alt="Человек стоящий на обрыве каньона" loading="lazy">
-          </picture>
-          <picture>
-            <source srcset="images/programs/programs-3.webp 1x, images/programs/programs-3@2x.webp 2x"
-              type="image/webp">
-            <img src="images/programs/programs-3.jpg" srcset="images/programs/programs-3@2x.jpg" width="250"
-              height="250" alt="Человек сидит на снегоходе на вершине горы" loading="lazy">
-          </picture>
-          <picture>
-            <source srcset="images/programs/programs-4.webp 1x, images/programs/programs-4@2x.webp 2x"
-              type="image/webp">
-            <img src="images/programs/programs-4.jpg" srcset="images/programs/programs-4@2x.jpg" width="250"
-              height="250" alt="Горы и равнина с рекой" loading="lazy">
-          </picture>
+          <div class="programs__pic">
+            <picture>
+              <source srcset="images/programs/programs-1.webp 1x, images/programs/programs-1@2x.webp 2x"
+                type="image/webp">
+              <img class="programs__img programs__img--top-left" src="images/programs/programs-1.jpg"
+                srcset="images/programs/programs-1@2x.jpg" width="250" height="250"
+                alt="Рука с напитком на фоне гор и лазурно голубой воды" loading="lazy">
+            </picture>
+          </div>
+          <div class="programs__pic">
+            <picture>
+              <source srcset="images/programs/programs-2.webp 1x, images/programs/programs-2@2x.webp 2x"
+                type="image/webp">
+              <img class="programs__img programs__img--top-right" src="images/programs/programs-2.jpg"
+                srcset="images/programs/programs-2@2x.jpg" width="250" height="250"
+                alt="Человек стоящий на обрыве каньона" loading="lazy">
+            </picture>
+          </div>
+          <div class="programs__pic">
+            <picture>
+              <source srcset="images/programs/programs-3.webp 1x, images/programs/programs-3@2x.webp 2x"
+                type="image/webp">
+              <img class="programs__img programs__img--bottom-left" src="images/programs/programs-3.jpg"
+                srcset="images/programs/programs-3@2x.jpg" width="250" height="250"
+                alt="Человек сидит на снегоходе на вершине горы" loading="lazy">
+            </picture>
+          </div>
+          <div class="programs__pic">
+            <picture>
+              <source srcset="images/programs/programs-4.webp 1x, images/programs/programs-4@2x.webp 2x"
+                type="image/webp">
+              <img class="programs__img programs__img--bottom-right" src="images/programs/programs-4.jpg"
+                srcset="images/programs/programs-4@2x.jpg" width="250" height="250" alt="Горы и равнина с рекой"
+                loading="lazy">
+            </picture>
+          </div>
         </div>
       </div>
     </section>

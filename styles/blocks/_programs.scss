@@ -1,0 +1,114 @@
+$sub-description: #000000;
+
+.programs {
+  background-color: $section-bg;
+}
+
+.programs__container {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  outline: 2px solid green;
+}
+
+.programs__wrapper {
+  max-width: 580px;
+
+  outline: 2px solid blueviolet;
+}
+
+.programs__description {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 1.125rem;
+  line-height: 150%;
+}
+
+.programs__item {
+  margin-bottom: 40px;
+  padding-left: 66px;
+  position: relative;
+
+  outline: 2px solid salmon;
+
+  &::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 7px;
+    left: 0;
+    background-repeat: no-repeat;
+  }
+
+  &--guide::before {
+    background-image: url("../icons/sprite.svg#guide");
+  }
+
+  &--safety::before {
+    background-image: url("../icons/sprite.svg#safety");
+  }
+
+  &--price::before {
+    background-image: url("../icons/sprite.svg#price");
+  }
+}
+
+.programs__subtitle {
+  @include title-basic;
+
+  margin-bottom: 4px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 111%;
+  letter-spacing: 0.01em;
+}
+
+.programs__sub-description {
+  margin: 0;
+  padding: 0;
+  font-size: 0.875rem;
+  line-height: 143%;
+  color: $sub-description;
+}
+
+.programs__media {
+  max-width: 510px;
+  height: calc(100% - 50px);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  align-items: center;
+  gap: 10px;
+
+  background-color: aqua;
+  outline: 2px solid coral;
+}
+
+.programs__pic {
+  max-height: 250px;
+}
+
+.programs__img {
+  &--top-left {
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
+
+  &--top-right {
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+  }
+
+  &--bottom-left {
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 50px;
+  }
+
+  &--bottom-right {
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+  }
+}
