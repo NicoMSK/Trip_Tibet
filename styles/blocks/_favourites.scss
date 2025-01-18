@@ -24,6 +24,17 @@
 
 .favourites__item {
   position: relative;
+  overflow: hidden;
+  border-radius: 32px;
+}
+
+.favourites__item:hover .favourites__wrapper {
+  overflow: visible;
+  transform: translateY(-80%);
+}
+
+.favourites__item:hover .favourites__star {
+  opacity: 0;
 }
 
 .favourites__img {
@@ -56,14 +67,22 @@
   }
 }
 
+//осталось поправить при разных размерах экрана масшатб и под мобилку полностью поправить весь контент
+
 .favourites__wrapper {
   padding: 30px 32px 20px;
+  position: absolute;
+  top: 80%;
   color: $main-light;
   backdrop-filter: blur(6px);
   background: rgba($main-bg, 0.2);
   border-radius: 32px;
+  transform: translateY(0);
+  transition: transform 0.9s;
 
-  background-color: black;
+  @media (max-width: $desktop-width) {
+    padding: 24px;
+  }
 }
 
 .favourites__preview-box {
@@ -71,17 +90,30 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-radius: 4px 0 0 4px;
 }
 
-.favourites__title {
+.favourites__title-card {
   margin: 0;
   line-height: 120%;
+
+  @media (max-width: $desktop-width) {
+    font-size: 1.3125rem;
+  }
+
+  @media (max-width: $tablet-medium-width) {
+    font-size: 1.125rem;
+  }
 }
 
 .favourites__text {
   margin: 0;
   font-size: 0.875rem;
   line-height: 129%;
+
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
 }
 
 .favourites__price {
@@ -92,11 +124,20 @@
   line-height: 120%;
   background-color: rgba($main-bg, 0.3);
   border-radius: 4px;
+
+  @media (max-width: $desktop-width) {
+    padding: 8px;
+    font-size: 1.125rem;
+  }
+
+  @media (max-width: $tablet-medium-width) {
+    font-size: 1.125rem;
+  }
 }
 
 .favourites__description {
   margin: 0;
-  margin-bottom: 105px;
+  margin-bottom: 56px;
   line-height: 150%;
 }
 
