@@ -13,6 +13,13 @@
   @media (max-width: $mobile-width) {
     padding-top: 50px;
     padding-bottom: 50px;
+    align-items: start;
+  }
+}
+
+.favourites__title {
+  @media (max-width: $tablet-width) {
+    margin-bottom: 32px;
   }
 }
 
@@ -20,16 +27,29 @@
   margin-bottom: 50px;
   display: flex;
   gap: 10px 20px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 32px;
+    overflow-x: auto;
+  }
 }
 
 .favourites__item {
   position: relative;
   overflow: hidden;
   border-radius: 32px;
+
+  @media (max-width: $tablet-width) {
+    flex: 1 0 285px;
+  }
 }
 
 .favourites__item:hover .favourites__wrapper {
   top: 0;
+
+  @media (max-width: $tablet-medium-width) {
+    top: 80%;
+  }
 }
 
 .favourites__item:hover .favourites__star {
@@ -64,13 +84,16 @@
     left: 12px;
     background-image: url("../icons/sprite.svg#star");
   }
-}
 
-//осталось поправить при разных размерах экрана масшатб и под мобилку полностью поправить весь контент
+  @media (max-width: $tablet-width) {
+    top: 36px;
+  }
+}
 
 .favourites__wrapper {
   padding: 30px 32px 20px;
   height: 100%;
+  font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -84,6 +107,14 @@
   @media (max-width: $desktop-width) {
     padding: 24px;
   }
+
+  @media (max-width: $tablet-medium-width) {
+    padding: 16px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding: 20px 24px;
+  }
 }
 
 .favourites__preview-box {
@@ -92,6 +123,10 @@
   justify-content: space-between;
   align-items: center;
   border-radius: 4px 0 0 4px;
+
+  @media (max-width: $desktop-width) {
+    margin-bottom: 28px;
+  }
 }
 
 .favourites__title-card {
@@ -107,7 +142,7 @@
   }
 }
 
-.favourites__text {
+.favourites__text-card {
   margin: 0;
   font-size: 0.875rem;
   line-height: 129%;
@@ -140,6 +175,10 @@
   @media (max-width: $tablet-medium-width) {
     font-size: 1.125rem;
   }
+
+  @media (max-width: $tablet-medium-width) {
+    font-size: 1rem;
+  }
 }
 
 .favourites__description {
@@ -149,6 +188,10 @@
   display: -webkit-box;
   -webkit-line-clamp: 12;
   -webkit-box-orient: vertical;
+
+  @media (max-width: $desktop-width) {
+    -webkit-line-clamp: 9;
+  }
 }
 
 .favourites__link {
