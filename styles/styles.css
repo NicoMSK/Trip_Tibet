@@ -654,7 +654,7 @@ ol {
   line-height: 83%;
   color: #f2be22;
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .preview-text {
     font-size: 1rem;
     line-height: 125%;
@@ -671,7 +671,7 @@ ol {
   color: #18121e;
   margin-bottom: 40px;
 }
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .title {
     font-size: 1.5rem;
   }
@@ -818,6 +818,223 @@ ol {
 .programs__img--bottom-right {
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
+}
+
+.favourites__container {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 995px) {
+  .favourites__container {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+}
+@media (max-width: 576px) {
+  .favourites__container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: start;
+  }
+}
+
+@media (max-width: 768px) {
+  .favourites__title {
+    margin-bottom: 32px;
+  }
+}
+
+.favourites__list {
+  margin-bottom: 50px;
+  display: flex;
+  gap: 10px 20px;
+}
+@media (max-width: 768px) {
+  .favourites__list {
+    margin-bottom: 32px;
+    overflow-x: auto;
+  }
+}
+
+.favourites__item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 32px;
+}
+@media (max-width: 768px) {
+  .favourites__item {
+    flex: 1 0 285px;
+  }
+}
+
+.favourites__item:hover .favourites__wrapper {
+  top: 0;
+}
+@media (max-width: 995px) {
+  .favourites__item:hover .favourites__wrapper {
+    top: 80%;
+  }
+}
+
+.favourites__item:hover .favourites__star {
+  opacity: 0;
+}
+
+.favourites__img {
+  display: block;
+}
+
+.favourites__star {
+  padding: 8px;
+  padding-left: 36px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 129%;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  color: #1a3e3e;
+  backdrop-filter: blur(4px);
+  background: rgba(253, 253, 253, 0.4);
+  border-radius: 4px 0 0 4px;
+}
+.favourites__star::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 17px;
+  height: 16px;
+  top: 8px;
+  left: 12px;
+  background-image: url("../icons/sprite.svg#star");
+}
+@media (max-width: 768px) {
+  .favourites__star {
+    top: 36px;
+  }
+}
+
+.favourites__wrapper {
+  padding: 30px 32px 20px;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 80%;
+  color: #fdfdfd;
+  backdrop-filter: blur(6px);
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 32px;
+  transition: all 0.9s;
+}
+@media (max-width: 1100px) {
+  .favourites__wrapper {
+    padding: 24px;
+  }
+}
+@media (max-width: 995px) {
+  .favourites__wrapper {
+    padding: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .favourites__wrapper {
+    padding: 20px 24px;
+  }
+}
+
+.favourites__preview-box {
+  margin-bottom: 38px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 4px 0 0 4px;
+}
+@media (max-width: 1100px) {
+  .favourites__preview-box {
+    margin-bottom: 28px;
+  }
+}
+
+.favourites__title-card {
+  margin: 0;
+  line-height: 120%;
+}
+@media (max-width: 1100px) {
+  .favourites__title-card {
+    font-size: 1.3125rem;
+  }
+}
+@media (max-width: 995px) {
+  .favourites__title-card {
+    font-size: 1.125rem;
+  }
+}
+
+.favourites__text-card {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 129%;
+}
+@media (max-width: 1100px) {
+  .favourites__text-card {
+    display: none;
+  }
+}
+
+.favourites__hidden {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.favourites__price {
+  margin: 0;
+  padding: 8px 16px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 120%;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+@media (max-width: 1100px) {
+  .favourites__price {
+    padding: 8px;
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 995px) {
+  .favourites__price {
+    font-size: 1.125rem;
+  }
+}
+@media (max-width: 995px) {
+  .favourites__price {
+    font-size: 1rem;
+  }
+}
+
+.favourites__description {
+  margin: 0;
+  line-height: 150%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 12;
+  -webkit-box-orient: vertical;
+}
+@media (max-width: 1100px) {
+  .favourites__description {
+    -webkit-line-clamp: 9;
+  }
+}
+
+.favourites__link {
+  margin-top: auto;
+  padding: 12px 18px;
 }
 
 /*# sourceMappingURL=styles.css.map */
