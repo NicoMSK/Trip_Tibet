@@ -1,0 +1,94 @@
+.travel {
+  background-color: $section-bg;
+}
+
+.travel__container {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  outline: 2px solid fuchsia;
+}
+
+.travel__list {
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 20px;
+}
+
+.travel__item {
+  max-width: 580px;
+  width: 100%;
+  flex: 1 0 580px;
+  border-radius: 10px;
+  background-color: $main-light;
+
+  outline: 2px solid red;
+}
+
+.travel__link {
+  @include link-basic;
+
+  padding: 16px;
+  display: flex;
+  gap: 24px;
+  color: $main-dark;
+
+  &:hover {
+    box-shadow: 0 0 15px 0 rgba(24, 18, 30, 0.12);
+  }
+}
+
+.travel__wrapper {
+  padding: 16px 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 294px;
+}
+
+.travel__subtitile {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 133%;
+}
+
+.travel__link:hover .travel__subtitile {
+  text-decoration: underline;
+}
+
+.travel__description {
+  margin: 0;
+  font-size: 0.875rem;
+  line-height: 143%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.travel__box {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.travel__time,
+.travel__subtext {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 143%;
+}
+
+.travel__time {
+  color: $preview-text;
+}
+
+.travel__subtext {
+  color: $button;
+}
