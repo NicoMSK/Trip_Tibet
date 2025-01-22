@@ -1,0 +1,148 @@
+.travel {
+  background-color: $section-bg;
+}
+
+.travel__container {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: start;
+  }
+}
+
+.travel__list {
+  margin-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 20px;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 32px;
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+}
+
+.travel__item {
+  flex: 1 1 400px;
+  display: flex;
+  border-radius: 10px;
+  background-color: $main-light;
+
+  @media (max-width: $mobile-width) {
+    flex: 1 0 285px;
+  }
+}
+
+.travel__link {
+  @include link-basic;
+
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  gap: 24px;
+  color: $main-dark;
+
+  &:hover {
+    box-shadow: 0 0 15px 0 rgba(24, 18, 30, 0.12);
+  }
+
+  @media (max-width: $mobile-width) {
+    padding: 0;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.travel__img {
+  display: block;
+
+  @media (max-width: $mobile-width) {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+  }
+}
+
+.travel__wrapper {
+  padding: 16px 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 294px;
+
+  @media (max-width: $mobile-width) {
+    padding: 16px;
+    flex: 1 1 auto;
+  }
+}
+
+.travel__subtitile {
+  margin: 0;
+  margin-bottom: 8.2%;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 133%;
+
+  @media (max-width: $tablet-medium-width) {
+    font-size: 1.375rem;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 6.3%;
+    font-size: 1.25rem;
+    line-height: 130%;
+  }
+}
+
+.travel__link:hover .travel__subtitile {
+  text-decoration: underline;
+}
+
+.travel__description {
+  margin: 0;
+  margin-bottom: 16px;
+  font-size: 0.875rem;
+  line-height: 143%;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 16px;
+  }
+}
+
+.travel__box {
+  margin-top: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.travel__time,
+.travel__subtext {
+  margin: 0;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 143%;
+}
+
+.travel__time {
+  color: $preview-text;
+}
+
+.travel__subtext {
+  color: $button;
+}
