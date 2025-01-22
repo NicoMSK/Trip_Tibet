@@ -1047,7 +1047,19 @@ ol {
   display: flex;
   flex-direction: column;
   align-items: center;
-  outline: 2px solid fuchsia;
+}
+@media (max-width: 768px) {
+  .travel__container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 576px) {
+  .travel__container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: start;
+  }
 }
 
 .travel__list {
@@ -1056,14 +1068,25 @@ ol {
   flex-wrap: wrap;
   gap: 24px 20px;
 }
+@media (max-width: 576px) {
+  .travel__list {
+    margin-bottom: 32px;
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+}
 
 .travel__item {
-  max-width: 580px;
-  width: 100%;
-  flex: 1 0 580px;
+  flex: 1 1 400px;
+  display: flex;
   border-radius: 10px;
   background-color: #fdfdfd;
-  outline: 2px solid red;
+}
+@media (max-width: 576px) {
+  .travel__item {
+    flex: 1 0 285px;
+  }
 }
 
 .travel__link {
@@ -1073,6 +1096,7 @@ ol {
   line-height: 125%;
   color: #fdfdfd;
   text-decoration: none;
+  width: 100%;
   padding: 16px;
   display: flex;
   gap: 24px;
@@ -1081,20 +1105,56 @@ ol {
 .travel__link:hover {
   box-shadow: 0 0 15px 0 rgba(24, 18, 30, 0.12);
 }
+@media (max-width: 576px) {
+  .travel__link {
+    padding: 0;
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+.travel__img {
+  display: block;
+}
+@media (max-width: 576px) {
+  .travel__img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+  }
+}
 
 .travel__wrapper {
   padding: 16px 0;
   display: flex;
   flex-direction: column;
-  flex: 1 0 294px;
+  flex: 1 1 294px;
+}
+@media (max-width: 576px) {
+  .travel__wrapper {
+    padding: 16px;
+    flex: 1 1 auto;
+  }
 }
 
 .travel__subtitile {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 8.2%;
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 133%;
+}
+@media (max-width: 995px) {
+  .travel__subtitile {
+    font-size: 1.375rem;
+  }
+}
+@media (max-width: 576px) {
+  .travel__subtitile {
+    margin-bottom: 6.3%;
+    font-size: 1.25rem;
+    line-height: 130%;
+  }
 }
 
 .travel__link:hover .travel__subtitile {
@@ -1103,12 +1163,18 @@ ol {
 
 .travel__description {
   margin: 0;
+  margin-bottom: 16px;
   font-size: 0.875rem;
   line-height: 143%;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+}
+@media (max-width: 576px) {
+  .travel__description {
+    margin-bottom: 16px;
+  }
 }
 
 .travel__box {
