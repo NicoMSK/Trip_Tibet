@@ -181,7 +181,7 @@
       </div>
     </section>
     <section class="favourites">
-      <div class="favourites__container container">
+      <div class="favourites__container container container--flex">
         <p class="favourites__text preview-text">по версии отдыхающих</p>
         <h2 class="favourites__title title">Популярные направления</h2>
         <ul class="favourites__list">
@@ -271,7 +271,7 @@
       </div>
     </section>
     <section class="travel">
-      <div class="travel__container container">
+      <div class="travel__container container container--flex">
         <p class="travel__text preview-text">делимся впечатлениями</p>
         <h2 class="travel__title title">Блог о путешествиях</h2>
         <ul class="travel__list">
@@ -363,44 +363,57 @@
       </div>
     </section>
     <section class="foto">
-      <div class="foto__container container">
+      <div class="foto__container container container--flex">
         <p class="foto__text preview-text">фото-отчет</p>
         <h2 class="foto__title title">Делимся впечатлениями</h2>
         <div class="foto__wrapper">
-          <picture>
-            <source srcset="images/gallery/air-balloon.webp 1x, images/gallery/air-balloon@2x.webp 2x"
-              type="image/webp">
-            <img class="foto__img" src="images/gallery/air-balloon.jpg" srcset="images/gallery/air-balloon@2x.jpg"
-              width="580" height="250" alt="Фотограф фотографирует воздушные шары, которые парят в воздухе"
-              loading="lazy">
-          </picture>
-          <picture>
-            <source srcset="images/gallery/map.webp 1x, images/gallery/map@2x.webp 2x" type="image/webp">
-            <img class="foto__img" src="images/gallery/map.jpg" srcset="images/gallery/map@2x.jpg 2x" width="280"
-              height="250" alt="Карта местности, на которой лежит карандаш, фотоаппрат, сумки и блокнот" loading="lazy">
-          </picture>
-          <picture>
-            <source srcset="images/gallery/tower-sea.webp 1x, images/gallery/tower-sea@2x.webp 2x" type="image/webp">
-            <img class="foto__img" src="images/gallery/tower-sea.jpg" srcset="images/gallery/tower-sea@2x.jpg 2x"
-              width="280" height="250" alt="Здание в ОАЭ стоящее в океане на острове" loading="lazy">
-          </picture>
-          <picture>
-            <source srcset="images/gallery/boats.webp 1x, images/gallery/boats@2x.webp 2x" type="image/webp">
-            <img class="foto__img" src="images/gallery/boats.jpg" srcset="images/gallery/boats@2x.jpg 2x" width="280"
-              height="250" alt="Гавань с лодками" loading="lazy">
-          </picture>
-          <picture>
-            <source srcset="images/gallery/canyon.webp 1x, images/gallery/canyon@2x.webp 2x" type="image/webp">
-            <img class="foto__img" src="images/gallery/canyon.jpg" srcset="images/gallery/canyon@2x.jpg 2x" width="580"
-              height="250" alt="Девушка стоит на краю каньона" loading="lazy">
-          </picture>
-          <picture>
-            <source srcset="images/gallery/book.webp 1x, images/gallery/book@2x.webp 2x" type="image/webp">
-            <img class="foto__img" src="images/gallery/book.jpg" srcset="images/gallery/book@2x.jpg 2x" width="280"
-              height="250"
-              alt="На столе лежит раскрытый пустой блокнот, рядом с ним лежит фотоаппрат с обективом, лупой, фотокартачками, очки и карандаш"
-              loading="lazy">
-          </picture>
+          <div class="foto__box">
+            <picture>
+              <source srcset="images/gallery/air-balloon.webp 1x, images/gallery/air-balloon@2x.webp 2x"
+                type="image/webp">
+              <img class="foto__img" src="images/gallery/air-balloon.jpg" srcset="images/gallery/air-balloon@2x.jpg"
+                width="580" height="250" alt="Фотограф фотографирует воздушные шары, которые парят в воздухе"
+                loading="lazy">
+            </picture>
+          </div>
+          <div class="foto__box">
+            <picture>
+              <source srcset="images/gallery/map.webp 1x, images/gallery/map@2x.webp 2x" type="image/webp">
+              <img class="foto__img" src="images/gallery/map.jpg" srcset="images/gallery/map@2x.jpg 2x" width="280"
+                height="250" alt="Карта местности, на которой лежит карандаш, фотоаппрат, сумки и блокнот"
+                loading="lazy">
+            </picture>
+          </div>
+          <div class="foto__box">
+            <picture>
+              <source srcset="images/gallery/tower-sea.webp 1x, images/gallery/tower-sea@2x.webp 2x" type="image/webp">
+              <img class="foto__img" src="images/gallery/tower-sea.jpg" srcset="images/gallery/tower-sea@2x.jpg 2x"
+                width="280" height="250" alt="Здание в ОАЭ стоящее в океане на острове" loading="lazy">
+            </picture>
+          </div>
+          <div class="foto__box">
+            <picture>
+              <source srcset="images/gallery/boats.webp 1x, images/gallery/boats@2x.webp 2x" type="image/webp">
+              <img class="foto__img" src="images/gallery/boats.jpg" srcset="images/gallery/boats@2x.jpg 2x" width="280"
+                height="250" alt="Гавань с лодками" loading="lazy">
+            </picture>
+          </div>
+          <div class="foto__box">
+            <picture>
+              <source srcset="images/gallery/canyon.webp 1x, images/gallery/canyon@2x.webp 2x" type="image/webp">
+              <img class="foto__img" src="images/gallery/canyon.jpg" srcset="images/gallery/canyon@2x.jpg 2x"
+                width="580" height="250" alt="Девушка стоит на краю каньона" loading="lazy">
+            </picture>
+          </div>
+          <div class="foto__box">
+            <picture>
+              <source srcset="images/gallery/book.webp 1x, images/gallery/book@2x.webp 2x" type="image/webp">
+              <img class="foto__img" src="images/gallery/book.jpg" srcset="images/gallery/book@2x.jpg 2x" width="280"
+                height="250"
+                alt="На столе лежит раскрытый пустой блокнот, рядом с ним лежит фотоаппрат с обективом, лупой, фотокартачками, очки и карандаш"
+                loading="lazy">
+            </picture>
+          </div>
         </div>
         <a class="foto__link btn" href="#">Наш pinterest</a>
       </div>

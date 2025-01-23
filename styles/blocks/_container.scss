@@ -3,4 +3,18 @@
   padding: 0 15px;
   max-width: 1210px;
   width: 100%;
+
+  &--flex {
+    padding-top: 5.3%;
+    padding-bottom: 6.62%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: $mobile-width) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      align-items: start;
+    }
+  }
 }
