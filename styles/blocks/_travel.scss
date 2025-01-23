@@ -2,25 +2,6 @@
   background-color: $section-bg;
 }
 
-.travel__container {
-  padding-top: 80px;
-  padding-bottom: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @media (max-width: $tablet-width) {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
-  @media (max-width: $mobile-width) {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    align-items: start;
-  }
-}
-
 .travel__list {
   margin-bottom: 50px;
   display: flex;

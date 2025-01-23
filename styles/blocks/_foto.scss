@@ -1,0 +1,56 @@
+.foto__wrapper {
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+
+  @media (max-width: $tablet-width) {
+    margin-bottom: 32px;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+  }
+}
+
+.foto__box {
+  position: relative; //
+
+  @media (max-width: $tablet-width) {
+    flex: 1 0 280px;
+  }
+}
+
+.foto__box:nth-child(1) {
+  grid-column: 1 / 2 span;
+}
+
+.foto__box:nth-child(5) {
+  grid-column: 2 / 2 span;
+}
+
+.foto__img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+// Оверлей
+
+.foto__btn {
+  padding: 0;
+  position: absolute; //
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background-color: rgba(26, 62, 62, 0);
+  opacity: 0;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: rgba(26, 62, 62, 0.3);
+    opacity: 1;
+  }
+}

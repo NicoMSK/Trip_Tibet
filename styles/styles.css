@@ -108,6 +108,20 @@ ol {
   max-width: 1210px;
   width: 100%;
 }
+.container--flex {
+  padding-top: 5.3%;
+  padding-bottom: 6.62%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 576px) {
+  .container--flex {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    align-items: start;
+  }
+}
 
 .header {
   position: relative;
@@ -673,6 +687,7 @@ ol {
 }
 @media (max-width: 768px) {
   .title {
+    margin-bottom: 32px;
     font-size: 1.5rem;
   }
 }
@@ -818,27 +833,6 @@ ol {
 .programs__img--bottom-right {
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
-}
-
-.favourites__container {
-  padding-top: 80px;
-  padding-bottom: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-@media (max-width: 995px) {
-  .favourites__container {
-    padding-top: 65px;
-    padding-bottom: 65px;
-  }
-}
-@media (max-width: 576px) {
-  .favourites__container {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    align-items: start;
-  }
 }
 
 @media (max-width: 768px) {
@@ -1041,27 +1035,6 @@ ol {
   background-color: #f3f5f4;
 }
 
-.travel__container {
-  padding-top: 80px;
-  padding-bottom: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-@media (max-width: 768px) {
-  .travel__container {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-}
-@media (max-width: 576px) {
-  .travel__container {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    align-items: start;
-  }
-}
-
 .travel__list {
   margin-bottom: 50px;
   display: flex;
@@ -1197,6 +1170,62 @@ ol {
 
 .travel__subtext {
   color: #1a3e3e;
+}
+
+.foto__wrapper {
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .foto__wrapper {
+    margin-bottom: 32px;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+  }
+}
+
+.foto__box {
+  position: relative;
+}
+@media (max-width: 768px) {
+  .foto__box {
+    flex: 1 0 280px;
+  }
+}
+
+.foto__box:nth-child(1) {
+  grid-column: 1/2 span;
+}
+
+.foto__box:nth-child(5) {
+  grid-column: 2/2 span;
+}
+
+.foto__img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.foto__btn {
+  padding: 0;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background-color: rgba(26, 62, 62, 0);
+  opacity: 0;
+  transition: all 0.3s;
+}
+.foto__btn:hover {
+  background-color: rgba(26, 62, 62, 0.3);
+  opacity: 1;
 }
 
 /*# sourceMappingURL=styles.css.map */
