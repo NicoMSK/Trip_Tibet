@@ -1187,6 +1187,9 @@ ol {
   }
 }
 
+.foto__box {
+  position: relative;
+}
 @media (max-width: 768px) {
   .foto__box {
     flex: 1 0 280px;
@@ -1206,6 +1209,23 @@ ol {
   height: 100%;
   object-fit: cover;
   border-radius: 6px;
+}
+
+.foto__btn {
+  padding: 0;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background-color: rgba(26, 62, 62, 0);
+  opacity: 0;
+  transition: all 0.3s;
+}
+.foto__btn:hover {
+  background-color: rgba(26, 62, 62, 0.3);
+  opacity: 1;
 }
 
 /*# sourceMappingURL=styles.css.map */
