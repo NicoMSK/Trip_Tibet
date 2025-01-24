@@ -425,21 +425,30 @@
       </div>
     </section>
     <section class="subscribe">
-      <div class="subscribe__container container">
-        <p class="subscribe__text preview-text">актуально</p>
-        <h2 class="subscribe__title title">Получайте полезные рассылки о&nbsp;путешествиях</h2>
-        <form class="subscribe__form" action="#" method="post">
-          <label class="subscribe__label">Введите e-mail адрес
-            <input class="subscribe__input" name="email" type="email" placeholder="name@domain.com" required>
-          </label>
-          <button class="subscribe__btn btn" type="submit">Подписаться на новости</button>
-        </form>
-        <p class="subscribe__description">подписываясь на&nbsp;новости, вы&nbsp;автоматически соглашаетесь
-          <a class="subscribe__link" href="#">
-            с&nbsp;условиями обработки
-            персональных данных
-          </a> и&nbsp;<a class="subscribe__link" href="#">правилами рекламных рассылок</a>
-        </p>
+      <div class="container">
+        <div class="subscribe__container">
+          <div class="subscribe__wrapper">
+            <p class="subscribe__text preview-text">актуально</p>
+            <h2 class="subscribe__title title">Получайте полезные рассылки о&nbsp;путешествиях</h2>
+          </div>
+          <div class="subscribe__wrapper-form">
+            <form class="subscribe__form" action="#" method="post">
+              <label class="subscribe__label" for="email">Введите e-mail адрес
+              </label>
+              <div class="subscribe__box">
+                <input class="subscribe__input" name="email" id="email" type="email" placeholder="name@domain.com"
+                  required>
+                <button class="subscribe__btn btn" type="submit">Подписаться на новости</button>
+              </div>
+            </form>
+            <p class="subscribe__description">подписываясь на&nbsp;новости, вы&nbsp;автоматически соглашаетесь
+              <a class="subscribe__link" href="#">
+                с&nbsp;условиями обработки
+                персональных данных
+              </a> и&nbsp;<a class="subscribe__link" href="#">правилами рекламных рассылок</a>
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
