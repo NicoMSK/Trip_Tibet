@@ -365,7 +365,7 @@ ol {
   height: 985px;
   background-image: image-set(url("../images/hero/hero-background.webp") type("image/webp") 1x, url("../images/hero/hero-background@2x.webp") type("image/webp") 2x, url("../images/hero/hero-background.jpg") 1x, url("../images/hero/hero-background@2x.jpg") 2x);
   background-repeat: no-repeat;
-  background-color: #18121e;
+  background-color: #1a3e3e;
   background-position: center;
   z-index: -1;
 }
@@ -1391,6 +1391,204 @@ ol {
 .subscribe__link {
   color: #18121e;
   text-decoration-skip-ink: none;
+}
+
+.footer {
+  color: #ffffff;
+  background-color: #1a3e3e;
+}
+
+.footer__top {
+  padding: 80px 0;
+  display: flex;
+  outline: 2px solid red;
+}
+@media (max-width: 995px) {
+  .footer__top {
+    flex-wrap: wrap;
+    row-gap: 35px;
+  }
+}
+
+.footer__contacts {
+  margin-right: 20px;
+  flex: 0 1 480px;
+  outline: 2px solid gold;
+}
+
+.footer__title {
+  margin: 0;
+  margin-bottom: 18px;
+  font-size: 1.25rem;
+  line-height: 120%;
+  color: #f3f5f4;
+}
+
+.footer__description {
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 0.875rem;
+  line-height: 143%;
+}
+
+.footer__mail,
+.footer__phone {
+  display: block;
+  font-family: "Nunito Sans", "Arial", sans-serif;
+  font-size: 1rem;
+  line-height: 125%;
+  color: #fdfdfd;
+  text-decoration: none;
+  display: inline-flex;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 129%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.footer__mail {
+  margin-right: 24px;
+}
+
+.footer__social {
+  margin-top: 32px;
+  outline: 2px solid violet;
+}
+
+.footer__services {
+  margin-right: 5px;
+  flex: 0 1 280px;
+  outline: 2px solid magenta;
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.footer__link {
+  display: block;
+  font-family: "Nunito Sans", "Arial", sans-serif;
+  font-size: 1rem;
+  line-height: 125%;
+  color: #fdfdfd;
+  text-decoration: none;
+  padding-left: 18px;
+  font-family: Arial, sans-serif;
+  font-size: 0.875rem;
+  position: relative;
+}
+.footer__link:hover {
+  color: #f2be22;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+.footer__link::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 14px;
+  background-color: #fdfdfd;
+  mask-image: url("../../icons/sprite.svg#arrow");
+  transform: rotate(-90deg);
+}
+
+.footer__link--new::after {
+  content: "new";
+  margin-left: 8px;
+  padding: 2px 10px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 133%;
+  text-transform: lowercase;
+  color: #1a3e3e;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.footer__link:hover::before,
+:hover::after {
+  background-color: #f2be22;
+}
+
+.footer__inform {
+  margin-left: auto;
+  flex: 0 1 280px;
+  outline: 2px solid chartreuse;
+}
+@media (max-width: 995px) {
+  .footer__inform {
+    margin: 0;
+  }
+}
+
+.footer__bottom {
+  background-color: #18121e;
+}
+
+.footer__bottom-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__copyright {
+  margin: 24px 0;
+  padding: 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 129%;
+}
+
+.footer__info-policy {
+  display: block;
+  font-family: "Nunito Sans", "Arial", sans-serif;
+  font-size: 1rem;
+  line-height: 125%;
+  color: #fdfdfd;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 129%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+}
+
+.social__link {
+  display: block;
+}
+.social__link--tg {
+  mask-image: url("../icons/sprite.svg#telegram");
+}
+.social__link--vk {
+  mask-image: url("../icons/sprite.svg#vk");
+}
+.social__link--pinter {
+  mask-image: url("../icons/sprite.svg#pinterest");
+}
+.social__link--skype {
+  mask-image: url("../icons/sprite.svg#skype");
+}
+.social__link::before {
+  content: "";
+  display: block;
+  width: 26px;
+  height: 26px;
+  background-color: #ffffff;
+}
+
+.social__link:hover::before,
+:focus-visible::before {
+  background-color: #f2be22;
 }
 
 /*# sourceMappingURL=styles.css.map */
