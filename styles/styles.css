@@ -1265,6 +1265,7 @@ ol {
 }
 @media (max-width: 576px) {
   .subscribe__container {
+    margin-bottom: 50px;
     padding: 24px;
     align-items: start;
   }
@@ -1365,6 +1366,7 @@ ol {
 .subscribe__btn {
   padding: 10px;
   flex: 0 1 240px;
+  border: none;
 }
 @media (max-width: 768px) {
   .subscribe__btn {
@@ -1401,19 +1403,35 @@ ol {
 .footer__top {
   padding: 80px 0;
   display: flex;
-  outline: 2px solid red;
 }
 @media (max-width: 995px) {
   .footer__top {
     flex-wrap: wrap;
-    row-gap: 35px;
+    gap: 32px;
+  }
+}
+@media (max-width: 576px) {
+  .footer__top {
+    padding: 50px 0 80px;
+    justify-content: start;
+    gap: 50px;
   }
 }
 
 .footer__contacts {
   margin-right: 20px;
   flex: 0 1 480px;
-  outline: 2px solid gold;
+}
+@media (max-width: 995px) {
+  .footer__contacts {
+    margin: 0;
+    flex: 1 0 480px;
+  }
+}
+@media (max-width: 576px) {
+  .footer__contacts {
+    flex: 1 1 480px;
+  }
 }
 
 .footer__title {
@@ -1429,6 +1447,11 @@ ol {
   margin-bottom: 50px;
   font-size: 0.875rem;
   line-height: 143%;
+}
+@media (max-width: 576px) {
+  .footer__description {
+    margin-bottom: 30px;
+  }
 }
 
 .footer__mail,
@@ -1453,13 +1476,11 @@ ol {
 
 .footer__social {
   margin-top: 32px;
-  outline: 2px solid violet;
 }
 
 .footer__services {
   margin-right: 5px;
   flex: 0 1 280px;
-  outline: 2px solid magenta;
 }
 
 .footer__item:not(:last-child) {
@@ -1517,7 +1538,6 @@ ol {
 .footer__inform {
   margin-left: auto;
   flex: 0 1 280px;
-  outline: 2px solid chartreuse;
 }
 @media (max-width: 995px) {
   .footer__inform {
@@ -1533,6 +1553,14 @@ ol {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+@media (max-width: 576px) {
+  .footer__bottom-container {
+    padding: 20px;
+    flex-direction: column;
+  }
 }
 
 .footer__copyright {
@@ -1541,6 +1569,12 @@ ol {
   font-size: 0.875rem;
   font-weight: 600;
   line-height: 129%;
+}
+@media (max-width: 576px) {
+  .footer__copyright {
+    margin: 0;
+    margin-bottom: 8px;
+  }
 }
 
 .footer__info-policy {
