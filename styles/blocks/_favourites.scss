@@ -7,10 +7,14 @@
 .favourites__list {
   margin-bottom: 50px;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 10px 20px;
 
   @media (max-width: $tablet-width) {
     margin-bottom: 32px;
+    flex-wrap: nowrap;
+    justify-content: start;
     overflow-x: auto;
   }
 }
@@ -19,6 +23,7 @@
   position: relative;
   overflow: hidden;
   border-radius: 32px;
+  background-color: $main-dark;
 
   @media (max-width: $tablet-width) {
     flex: 1 0 285px;
@@ -85,14 +90,6 @@
   border-radius: 32px;
   transition: all 0.9s;
 
-  @media (max-width: $desktop-width) {
-    padding: 24px;
-  }
-
-  @media (max-width: $tablet-medium-width) {
-    padding: 16px;
-  }
-
   @media (max-width: $tablet-width) {
     padding: 20px 24px;
   }
@@ -104,21 +101,13 @@
   justify-content: space-between;
   align-items: center;
   border-radius: 4px 0 0 4px;
-
-  @media (max-width: $desktop-width) {
-    margin-bottom: 28px;
-  }
 }
 
 .favourites__title-card {
   margin: 0;
   line-height: 120%;
 
-  @media (max-width: $desktop-width) {
-    font-size: 1.3125rem;
-  }
-
-  @media (max-width: $tablet-medium-width) {
+  @media (max-width: $tablet-width) {
     font-size: 1.125rem;
   }
 }
@@ -148,16 +137,7 @@
   background-color: rgba($main-bg, 0.3);
   border-radius: 4px;
 
-  @media (max-width: $desktop-width) {
-    padding: 8px;
-    font-size: 1.125rem;
-  }
-
-  @media (max-width: $tablet-medium-width) {
-    font-size: 1.125rem;
-  }
-
-  @media (max-width: $tablet-medium-width) {
+  @media (max-width: $tablet-width) {
     font-size: 1rem;
   }
 }
@@ -168,17 +148,16 @@
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 12;
+  line-clamp: 12;
   -webkit-box-orient: vertical;
 
   @media (max-width: $desktop-width) {
     -webkit-line-clamp: 9;
+    line-clamp: 9;
   }
 }
 
 .favourites__link {
   margin-top: auto;
   padding: 12px 18px;
-}
-
-.favourites__item:focus-visible .favourites__link {
 }

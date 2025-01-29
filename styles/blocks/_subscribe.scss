@@ -64,6 +64,7 @@
 
 .subscribe__wrapper-form {
   flex: 0 1 536px;
+  overflow: hidden;
 
   @media (max-width: $tablet-medium-width) {
     flex: 1;
