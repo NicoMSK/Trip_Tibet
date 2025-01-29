@@ -5,6 +5,9 @@
 .nav__logo-link {
   @include link-basic;
 
+  margin-right: 15px;
+  flex: 1 0 137px;
+
   @media (max-width: $tablet-width) {
     width: 84px;
     height: 42px;
@@ -119,6 +122,7 @@
 
     &:hover {
       text-decoration: underline;
+
       &::before {
         background-color: $preview-text;
       }
